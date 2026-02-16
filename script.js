@@ -1,142 +1,135 @@
-// var age = 18;
+// var number = parseInt(prompt("Enter any number from 1 to 100"));
 
-// if(age>=18){
-//     console.log("You can vote");
-    
-// }
-
-// var num = prompt("Enter any number")
-
-
-// if(num % 2 === 0){
-//     console.log("Even number");
-    
-// }
-
-
-// var password = prompt("Enter your password")
-
-
-// if(password === "12345"){
-//     console.log("Login successsful");
-    
+// if (number >= 1 &&  number <= 10) {
+//     console.log("Number is between 1 and 10");
+// } else if (number >= 11 && number <= 100) {
+//     console.log("Number is between from 11 and 100");
+// } else {
+//   console.log("Number is not between 1 and 100");
 // }
 
 
 
-// var num = 123
-// if(num !== 123){
-//     console.log("Pass");
-// }
+// var number = parseInt(prompt("Enter any number from 1 to 100"));
 
-
-// var city = prompt("Enter your favourite city")
-// if(city !== "Karachi"){
-//     console.log("You are not from Karachi");
-    
-// }
-
-
-// var email = prompt("Enter your email")
-// if(email !== "zohakhan@gmail.com"){
-//     console.log("Error : User not found");
-    
-// }
-
-
-
-// var username = prompt("Enter your username")
-// if(username === "Zoha"){
-//     console.log("Welcome Zoha!");
+// if((number >= 1 && number <= 10) || (number >= 91 && number <=100)){
+//     console.log("Number is between 1 and 10 or 91 and 100");
+// }else if(number >= 11 && number <= 90){
+//     console.log("Number is between 11 and 90");
 // }else{
-//     console.log("User not found");
+//     console.log("Number is not between 1 and 100");
+
 // }
 
-// var shoppingAmount = +prompt("Enter your shopping amount")
-// if(shoppingAmount >= 5000){
-//     console.log("You can get 20% off");
+
+
+// var number = parseInt(prompt("Enter any number from 1 to 100"));
+
+// if((number >= 1 && number <= 10) || (number >= 91 && number <=100)){
+
+//     if(number >= 1 && number <= 10){
+//         console.log("Number is between 1 and 10");
+//     }else{
+//         console.log("Number is between 91-100");
+//     }
+
+// }else if(number >= 11 && number <= 90){
+//     console.log("Number is between 11 and 90");
 // }else{
-//     console.log("No discount availabe");
-    
+//     if(number > 100){
+//         console.log("Number is positive and greater than 100");
+//     }else if (number < 0){
+//         console.log("Number is negative");
+//     }
+//     else{
+//         console.log("Number is zero");
+//     }
 // }
 
 
 
+// var skill1 = prompt("Do you know html ? (yes / no)");
 
-// var dressColor = prompt("Which color dress do you want");
+// if(skill1 === "yes"){
+//     console.log("Good html ate ha");
+//     var skill2 = prompt("Do you know css ? (yes / no)");
+//     if(skill2 === "yes"){
+//         console.log("Css ate ha ");
+//         var skill3 = prompt("Do you know javascript ? (yes / no)");
+//         if(skill3 === "yes"){
+//             console.log("Congratulation! You are hired");
+//         }else{
+//             console.log("Javascript nahi ate");
 
-// if(dressColor === "Red"){
-//     console.log("Buy this red color dress");
-// }else if(dressColor === "Blue"){
-//     console.log("Buy this blue color dress");
-// }else if(dressColor == "Yellow"){
-//     console.log("Buy this yellow color dress");
+//         }
+
+//     }else{
+//         console.log("Css nahi ate");
+
+//     }
+
 // }else{
-//     console.log("Buy any color dress");
+//     console.log("Please learn html");
+
 // }
 
+// ============= EASY ===========
+// var studentMarks = +prompt("Enter your marks")
 
-
-// var battery = Number(prompt("Enter battery percentage"));
-
-// if(battery > 80){
-//     console.log("Battery Full 🔋");
-// } 
-// else if(battery > 30){
-//     console.log("Battery Medium ⚡");
-// } 
-// else {
-//     console.log("Low Battery! Charge Now 🔴");
-// }
-
-
-
-// var marks = prompt("Enter your marks")
-// if(marks >= 90){
-//     console.log("Excellent");
-// }else if(marks >= 70){
-//     console.log("Good");
-// }else if(marks >= 50){
-//     console.log("Average");
+// if(studentMarks >= 0 && studentMarks < 50){
+//     console.log("You have failed");
+// }else if (studentMarks >= 50 && studentMarks <= 100){
+//     console.log("You have passed");
 // }else{
-//     console.log("Fail");
+//     console.log("Invalid input");
+
 // }
 
 
-// var age = prompt("Enter your age")
-// var permissionSlip = prompt("You have permission slip or not only enter (true or false)")
+// ============= Normal ============
+// var age = +prompt("Enter your age");
 
+// if(age >= 18){
 
+//     var writtenTest = prompt("Pass the written test (yes/no)")
+//     if(writtenTest === "yes"){
+//         var drivingTest = prompt("Pass the driving test (yes/no)")
+//         if(drivingTest === "yes"){
+//             console.log("Congratulations! You are eligible for a driving license");
 
-// if(age > 18 && permissionSlip === "true"){
-//     console.log("You can go the trip");
+//         }else{
+//             console.log("Please pass the driving test.");
+
+//         }
+//     }else{
+//         console.log("Please pass the written test");
+
+//     }
 // }else{
-//     console.log("You can not go");
+//     console.log("Your age is below 18");
+
 // }
 
+// =========== Hard    ============
+// var marks = +prompt("Enter your marks");
 
+// if (marks >= 70) {
+//   var entranceTest = +prompt("Enter entrance test marks");
+//   if (entranceTest >= 75) {
+//     var interviewStatus = prompt("Interview Status (pass/fail)");
 
-
-// var email = prompt("Enter email")
-// var password = prompt("Enter password")
-// if(email === "zohakhan@gmail.com" && password === "12345"){
-//     console.log("Login successfully");
-// }else{
-//     console.log("Login fail");
-// }
-
-
-// var day = prompt("Enter day")
-// if(day === "Sunday" || day === "Saturday"){
-//     console.log("Weekend day");
-// }else{
-//     console.log("No weekend day"); 
-// }
-
-
-// var isRaining = true
-// if(!isRaining){
-//     console.log("Bahaar jaw");
-// }else{
-//     console.log("Ghar ma raho");
+//     if (interviewStatus === "pass") {
+//       if (marks >= 90 && entranceTest >= 90) {
+//         console.log("You got admission with scholarship!");
+//       } else {
+//         console.log("Congratulations! You are admitted");
+//       }
+//     } else {
+//       console.log("You must pass the interview.");
+//     }
+//   } else {
+//     console.log("You need at least 75 in the entrance test.");
+//   }
+// } else {
+//   console.log("Minimum 70 marks required");
 // }
